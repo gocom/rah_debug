@@ -11,3 +11,9 @@ bc. define('rah_debug', 'user1, user2');
 p. For instance to display debugging information to users "debugger", "buildbot" and "admin", the above line would look like this:
 
 bc. define('rah_debug', 'admin, debugger, buildbot');
+
+h2. Changelog
+
+h3. Version 0.1 - 2012/08/28
+
+* Initial release.
