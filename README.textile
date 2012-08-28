@@ -1,0 +1,13 @@
+h1. rah_debug
+
+p. Display Textpattern site's debugging information to selected logged-in users no matter what the site's production status is set to. This debugging information includes error messages and the tag trace. The plugin also adds the familiar tag trace to admin-side pages.
+
+h2. Configuration
+
+p. Whitelisted users that see the debugging information can be defined from Textpattern's configuration file, config.php. Rah_debug expects a constant named rah_debug, containing comma-separated list of usernames.
+
+bc. define('rah_debug', 'user1, user2');
+
+p. For instance to display debugging information to users "debugger", "buildbot" and "admin", the above line would look like this:
+
+bc. define('rah_debug', 'admin, debugger, buildbot');
