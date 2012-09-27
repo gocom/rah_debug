@@ -40,7 +40,10 @@ class rah_debug {
 		
 		if(!$txp_user) {
 			$user = is_logged_in();
-			$this->user = $user['name'];
+
+			if($user) {
+				$this->user = $user['name'];
+			}
 		}
 		
 		else {
