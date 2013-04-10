@@ -13,8 +13,6 @@
  * http://www.gnu.org/licenses/gpl-2.0.html
  */
 
-new rah_debug();
-
 class rah_debug {
 
 	/**
@@ -85,5 +83,7 @@ class rah_debug {
 		}
 	}
 }
+
+new rah_debug();
 
 ?>
