@@ -85,5 +85,3 @@ class rah_debug {
 }
 
 new rah_debug();
-
-?>
