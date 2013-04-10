@@ -16,19 +16,23 @@
 class rah_debug {
 
 	/**
-	 * @var string Current user
+	 * Currently logged in user.
+	 *
+	 * @var string
 	 */
 
 	public $user = false;
-	
+
 	/**
-	 * @var array Users that see debugging information
+	 * List of users that see debugging information.
+	 *
+	 * @var array
 	 */
-	
+
 	public $listed = array();
 
 	/**
-	 * Constructor
+	 * Constructor.
 	 */
 	
 	public function __construct() {
@@ -56,7 +60,7 @@ class rah_debug {
 	}
 	
 	/**
-	 * Turn debugging mode on for certain logged in users
+	 * Turns debugging mode on for certain logged in users.
 	 */
 	
 	public function runner() {
@@ -72,7 +76,7 @@ class rah_debug {
 	}
 	
 	/**
-	 * Adds tag trace to the admin-side footer
+	 * Adds tag trace to the admin-side footer.
 	 */
 	
 	public function trace() {
