@@ -24,14 +24,6 @@ class rah_debug
 	public $user = false;
 
 	/**
-	 * List of users that see debugging information.
-	 *
-	 * @var array
-	 */
-
-	public $listed = array();
-
-	/**
 	 * Constructor.
 	 */
 
@@ -39,6 +31,7 @@ class rah_debug
 	{
 		global $txp_user;
 
+		add_privs('rah_debug_visible', '1');
 		register_callback(array($this, 'trace'), 'admin_side', 'body_end');
 
 		if (!$txp_user)
@@ -55,11 +48,6 @@ class rah_debug
 			$this->user = $txp_user;
 		}
 
-		if (defined('rah_debug'))
-		{
-			$this->listed = do_list(rah_debug);
-		}
-
 		$this->runner();
 	}
 
@@ -71,13 +59,11 @@ class rah_debug
 	{
 		global $prefs, $production_status;
 
-		if (!$this->user || !in_array($this->user, $this->listed, true))
+		if ($this->user && has_privs('rah_debug_visible', $this->user))
 		{
-			return;
+			$prefs['production_status'] = $production_status = 'debug';
+			set_error_level('debug');
 		}
-
-		$prefs['production_status'] = $production_status = 'debug';
-		set_error_level('debug');
 	}
 
 	/**
