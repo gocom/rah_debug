@@ -8,6 +8,10 @@ p. Rah_debug displays debugging information based on the user's group and privil
 
 h2. Changelog
 
+h3. Version 0.2.2 - 2013/04/25 - "Download":http://rahforum.biz/d/rah_debug_v0.2.2_zip.txt
+
+* Released as a "Composer package":https://packagist.org/packages/rah/rah_debug.
+
 h3. Version 0.2.1 - 2013/04/10 - "Download":http://rahforum.biz/d/rah_debug_v0.2.1_zip.txt
 
 * Corrected download links in the help file.
