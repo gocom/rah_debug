@@ -1,0 +1,24 @@
+{
+	"name": "rah/rah_debug",
+	"description": "User tied debugging information plugin for Textpattern",
+	"keywords": ["textpattern"],
+	"homepage": "https://github.com/gocom/rah_debug",
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "Jukka Svahn",
+			"homepage": "http://rahforum.biz",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/gocom/rah_debug/issues",
+		"source": "https://github.com/gocom/rah_debug"
+	},
+	"autoload": {
+		"files": []
+	},
+	"require": {
+		"php": ">=5.2.0"
+	}
+}
