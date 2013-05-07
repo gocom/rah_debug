@@ -1,5 +1,7 @@
 h1. rah_debug
 
+p. "Packagist":https://packagist.org/packages/rah/rah_debug | "Twitter":http://twitter.com/gocom | "Donate":http://rahforum.biz/donate/rah_debug
+
 p. Display Textpattern site's debugging information to selected logged-in users no matter what the site's production status is set to. This debugging information includes error messages and the tag trace. The plugin also adds the familiar tag trace to admin-side pages.
 
 h2. Installing
