@@ -16,6 +16,10 @@ p. Rah_debug displays debugging information based on the user's group and privil
 
 h2. Changelog
 
+h3. Version 0.2.3 - 2013/05/07
+
+* Composer package now uses "textpattern/lock":https://packagist.org/packages/textpattern/lock and "textpattern/installer":https://packagist.org/packages/textpattern/installer. The package installs to Textpattern without any extra configuration.
+
 h3. Version 0.2.2 - 2013/04/25
 
 * Released as a "Composer package":https://packagist.org/packages/rah/rah_debug.
