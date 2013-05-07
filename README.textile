@@ -2,24 +2,30 @@ h1. rah_debug
 
 p. Display Textpattern site's debugging information to selected logged-in users no matter what the site's production status is set to. This debugging information includes error messages and the tag trace. The plugin also adds the familiar tag trace to admin-side pages.
 
+h2. Installing
+
+p. Using "Composer":http://getcomposer.org:
+
+bc. $ composer.phar require rah/rah_debug
+
 h2. Basics
 
 p. Rah_debug displays debugging information based on the user's group and privileges. By default, all *Publishers* will see the debugging information regardless the production status.
 
 h2. Changelog
 
-h3. Version 0.2.2 - 2013/04/25 - "Download":http://rahforum.biz/d/rah_debug_v0.2.2_zip.txt
+h3. Version 0.2.2 - 2013/04/25
 
 * Released as a "Composer package":https://packagist.org/packages/rah/rah_debug.
 
-h3. Version 0.2.1 - 2013/04/10 - "Download":http://rahforum.biz/d/rah_debug_v0.2.1_zip.txt
+h3. Version 0.2.1 - 2013/04/10
 
 * Corrected download links in the help file.
 
-h3. Version 0.2 - 2013/04/10 - "Download":http://rahforum.biz/d/rah_debug_v0.2_zip.txt
+h3. Version 0.2 - 2013/04/10
 
 * Changed: Uses user group and privileges, dropped the advanced configuration.
 
-h3. Version 0.1 - 2012/08/28 - "Download":http://rahforum.biz/d/rah_debug_v0.1_zip.txt
+h3. Version 0.1 - 2012/08/28
 
 * Initial release.
