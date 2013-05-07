@@ -15,9 +15,6 @@
 		"issues": "https://github.com/gocom/rah_debug/issues",
 		"source": "https://github.com/gocom/rah_debug"
 	},
-	"autoload": {
-		"files": []
-	},
 	"require": {
 		"php": ">=5.2.0"
 	}
