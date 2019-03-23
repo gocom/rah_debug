@@ -1,18 +1,18 @@
 h1. rah_debug
 
-p. "Packagist":https://packagist.org/packages/rah/rah_debug | "Twitter":http://twitter.com/gocom | "Donate":http://rahforum.biz/donate/rah_debug
+"Packagist":https://packagist.org/packages/rah/rah_debug
 
-p. Display Textpattern site's debugging information to selected logged-in users no matter what the site's production status is set to. This debugging information includes error messages and the tag trace. The plugin also adds the familiar tag trace to admin-side pages.
+Display Textpattern site's debugging information to selected logged-in users no matter what the site's production status is set to. This debugging information includes error messages and the tag trace. The plugin also adds the familiar tag trace to admin-side pages.
 
-h2. Installing
+h2. Install
 
-p. Using "Composer":http://getcomposer.org:
+Using "Composer":https://getcomposer.org:
 
-bc. $ composer.phar require rah/rah_debug
+bc. $ composer require rah/rah_debug
 
 h2. Basics
 
-p. Rah_debug displays debugging information based on the user's group and privileges. By default, all *Publishers* will see the debugging information regardless the production status.
+Rah_debug displays debugging information based on the user's group and privileges. By default, all *Publishers* will see the debugging information regardless the production status.
 
 h2. Changelog
 
