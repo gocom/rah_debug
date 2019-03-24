@@ -38,7 +38,6 @@ final class Rah_Debug
         global $txp_user;
 
         add_privs('rah_debug_visible', '1');
-        register_callback([$this, 'trace'], 'admin_side', 'body_end');
 
         if (!$txp_user) {
             $user = is_logged_in();
@@ -54,7 +53,7 @@ final class Rah_Debug
     }
 
     /**
-     * Turns debugging mode on for certain logged in users.
+     * Turns debugging mode on for privileged users.
      */
     public function runner()
     {
@@ -63,18 +62,6 @@ final class Rah_Debug
         if ($this->user && has_privs('rah_debug_visible', $this->user)) {
             $prefs['production_status'] = $production_status = 'debug';
             set_error_level('debug');
-        }
-    }
-
-    /**
-     * Adds tag trace to the admin-side footer.
-     */
-    public function trace()
-    {
-        global $txptrace, $production_status;
-
-        if ($txptrace && $production_status === 'debug') {
-            echo n . comment('txp tag trace: ' . n . str_replace('--', '&shy;&shy;', implode(n, $txptrace)) . n);
         }
     }
 }
