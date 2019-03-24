@@ -12,7 +12,7 @@ bc. $ composer require rah/rah_debug
 
 h2. Changelog
 
-h3. Version 0.3.0 - upcoming
+h3. Version 0.3.0 - 2019/03/24
 
 * Textpattern 4.7.0 compatibility.
 
