@@ -1,6 +1,6 @@
 h1. rah_debug
 
-"Packagist":https://packagist.org/packages/rah/rah_debug
+"Packagist":https://packagist.org/packages/rah/rah_debug | "Issues":https://github.com/gocom/rah_debug/issues
 
 Display Textpattern site's debugging information to selected logged-in users no matter what the site's production status is set to. This debugging information includes error messages and the tag trace. The plugin also adds the familiar tag trace to admin-side pages.
 
