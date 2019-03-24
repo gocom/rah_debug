@@ -57,11 +57,16 @@ final class Rah_Debug
      */
     public function runner()
     {
-        global $prefs, $production_status;
+        global $prefs, $production_status, $trace;
 
-        if ($this->user && has_privs('rah_debug_visible', $this->user)) {
+        if ($production_status === 'live' && $this->user && has_privs('rah_debug_visible', $this->user)) {
             $prefs['production_status'] = $production_status = 'debug';
             set_error_level('debug');
+            $trace::setQuiet(false);
+
+            // Workarounds to errors caused by buggy, static Trace class.
+            $trace->start('rah_debug_void_1');
+            $trace->start('rah_debug_void_2');
         }
     }
 }
