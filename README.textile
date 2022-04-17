@@ -1,6 +1,6 @@
 h1. rah_debug
 
-"Packagist":https://packagist.org/packages/rah/rah_debug | "Issues":https://github.com/gocom/rah_debug/issues
+"Download":https://github.com/gocom/rah_debug/releases | "Packagist":https://packagist.org/packages/rah/rah_debug | "Issues":https://github.com/gocom/rah_debug/issues
 
 Rah_debug displays "Textpattern's":https://textpattern.com debugging information to logged in **Publisher** level users regardless of the site's current production status. This debugging information includes error messages and the tag trace.
 
@@ -9,6 +9,8 @@ h2. Install
 Using "Composer":https://getcomposer.org:
 
 bc. $ composer require rah/rah_debug
+
+Or "download":https://github.com/gocom/rah_debug/releases an installer package.
 
 h2. Changelog
 
